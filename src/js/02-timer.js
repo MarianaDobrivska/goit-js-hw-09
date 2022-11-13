@@ -35,6 +35,7 @@ const options = {
         secondsValueEl.textContent = addLeadingZero(remainingTime.seconds);
         if (selectedDates[0] - Date.now() < 1000) {
           clearInterval(intervalID);
+          startButton.disabled = true;
         }
       }, 1000);
     }
