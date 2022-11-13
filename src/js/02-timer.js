@@ -19,7 +19,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     const deltaT = selectedDates[0] - new Date();
-    if (selectedDates[0] < options.defaultDate || deltaT < 1000) {
+    if (selectedDates[0] < options.defaultDate || deltaT < 1500) {
       Notiflix.Notify.warning('Please choose a date in the future');
       return;
     }
